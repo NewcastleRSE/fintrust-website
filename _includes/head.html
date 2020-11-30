@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{{ "/assets/images/favicon.png" | relative_url }}" title="Favicon"/>
+
+  <!--Icon Fonts - Font Awesome Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- Main CSS Files -->
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+  <!-- Namari Color CSS -->
+  <link rel="stylesheet" href="{{ "/assets/css/namari-color.css" | relative_url }}">
+
+
+  <!-- Animate CSS-->
+  <link href="{{ "/assets/css/animate.css" | relative_url }}" rel="stylesheet" type="text/css">
+
+  <!--Google Webfonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+</head>
+
