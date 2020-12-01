@@ -1539,20 +1539,24 @@ blockquote {
     margin-bottom: 0;
 }
 
-#scrollUp:before {
+
+#scrollUp::before {
     background: #ccc;
-    font-family: "fontawesome";
     font-size: 2.4em;
     font-style: normal;
-    font-weight: normal;
     text-align: center;
     color: #fff;
     width: 45px;
     height: 45px;
     display: inline-block;
     line-height: 45px;
-    content: "\f106";
     opacity: 1;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f077";
 }
 
 /*Preloader*/
