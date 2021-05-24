@@ -3,30 +3,27 @@
         <div class="row clearfix">
             <div class="col-1">
                 <!--Logo-->
-                <div id="logo">
-                    <!--Logo that is shown on the banner-->
-                    <img src="{{ "/assets/images/logo.png" | relative_url }}" id="banner-logo" alt="Landing Page"/>
-                    <!--End of Banner Logo-->
-                    <!--The Logo that is shown on the sticky Navigation Bar-->
-                    <img src="{{ "/assets/images/logo-2.png" | relative_url }}" id="navigation-logo" alt="Landing Page"/>
-                    <!--End of Navigation Logo-->
-                </div>
+                <a href="{{ site.baseurl }}{% link index.markdown %}">
+                    <div id="logo">
+                        <!--Logo that is shown on the banner-->
+                        <img src="{{ "/assets/images/logo.png" | relative_url }}" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="{{ "/assets/images/logo-2.png" | relative_url }}" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
+                    </div>
+                </a>
                 <!--End of Logo-->
                 <aside>
                     <!--Social Icons in Header-->
                     <ul class="social-icons">
                         <li>
-                            <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                            <a target="_blank" title="Facebook" href="https://www.facebook.com/">
                                 <i class="fab fa-facebook-f fa-1x"></i><span>Facebook</span>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" title="Google+" href="https://google.com/+username">
-                                <i class="fab fa-google-plus-g fa-1x"></i><span>Google+</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" title="Twitter" href="https://www.twitter.com/username">
+                            <a target="_blank" title="Twitter" href="https://www.twitter.com/">
                                 <i class="fab fa-twitter fa-1x"></i><span>Twitter</span>
                             </a>
                         </li>
@@ -37,22 +34,22 @@
                 <nav id="nav-main">
                     <ul>
                         <li>
-                            <a href="#banner">Home</a>
+                            <a href="{{ site.baseurl }}{% link index.markdown %}">Home</a>
                         </li>
                         <li>
-                            <a href="#goals">Research</a>
+                            <a href="{{ site.baseurl }}{% link index.markdown %}#goals">Research</a>
                         </li>
                         <li>
-                            <a href="#gallery">Projects</a>
+                            <a href="{{ site.baseurl }}{% link index.markdown %}#gallery">Projects</a>
                         </li>
                         <li>
-                            <a href="#services">Publications</a>
+                            <a href="{{ site.baseurl }}{% link index.markdown %}#publications">Publications</a>
                         </li>
                         <li>
-                            <a href="#testimonials">People</a>
+                            <a href="{{ site.baseurl }}{% link index.markdown %}#team">People</a>
                         </li>
                         <li>
-                            <a href="#clients">Partners</a>
+                            <a href="{{ site.baseurl }}{% link index.markdown %}#partners">Partners</a>
                         </li>
                     </ul>
                 </nav>
@@ -63,6 +60,7 @@
         </div>
     </div>
     <!--End of Header-->
+    {% if page.layout == "home" %}
     <!--Banner Content-->
     <div id="banner-content" class="row clearfix">
         <div class="col-38">
@@ -76,4 +74,6 @@
         </div>
     </div>
     <!--End of Banner Content-->
+    {% else %}
+    {% endif %}
 </header>
