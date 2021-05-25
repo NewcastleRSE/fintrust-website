@@ -2348,3 +2348,6 @@ blockquote {
 #gallery, #team {
     padding-top:30px;
 }
+#team blockquote {
+    margin-bottom:50px;
+}

@@ -32,6 +32,10 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  team:
+    output: true   
+
 include: ['.well-known']
 
 # Exclude from processing.

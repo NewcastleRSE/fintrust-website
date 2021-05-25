@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<main id="content">
+    <section id="page" class="clearfix">
+        <div class="row clearfix">
+            <div class="col-1">
+                <div class="section-heading">
+                    <h3>{{ page.category }}</h3>
+                    <h2 class="section-title">{{ page.title }}</h2>
+                    {{ content }}
+                </div>
+            </div>
+            {% for post in site.posts %}                        
+                <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="icon-block-description">
+                        <a href="{{ post.url | relative_url }}">
+                        <h4>{{ post.title }}</h4></a>
+                        <p>{{ post.author }} | {{ post.date | date: "%-d %B %Y" }}</p>
+                        <a href="{{ post.url | relative_url }}" class="button">
+                            READ MORE&nbsp;&nbsp;<i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}  
+        </div>
+    </section>
+</main>
+
