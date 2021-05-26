@@ -432,7 +432,6 @@ section {
 .play-icon:before {
     font-family: 'fontawesome';
     content: '\f144';
-    speak: none;
     font-size: 74px;
     line-height: 110px;
     font-style: normal;
@@ -706,7 +705,6 @@ a img {
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    -webkit-backface-visibility: hidden;
 }
 
 a img:hover {
@@ -990,7 +988,6 @@ blockquote {
 
 #gallery a:hover img {
     opacity: 0.15;
-    -moz-backface-visibility: hidden;
 }
 
 #gallery a:before {
@@ -1012,7 +1009,6 @@ blockquote {
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear;
-    vertical-align: middle;
 }
 
 #gallery a:hover:before {
@@ -1396,8 +1392,7 @@ blockquote {
 .partner-overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top;
-    0;
+    top:0;
     right: 0;
     bottom: 0;
     left: 0;
