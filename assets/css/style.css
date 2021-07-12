@@ -1352,7 +1352,7 @@ blockquote {
 #slvj-close-icon:before {
     font-family: "fontawesome";
     color: #fff;
-    content: '\f00d';
+    content: '\f00d'; 
     font-size: 22px;
     opacity: 0.5;
     -webkit-transition: all 0.3s ease-out;
@@ -2339,6 +2339,19 @@ blockquote {
     font-family: "Font Awesome 5 Free";
     content: "\f0c9";
     font-weight: 900; 
+}
+#slvj-close-icon:before { 
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    font-weight: 900; 
+}
+#gallery a:before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f167";
+    font-weight: 900; 
+}
+#gallery aside {
+    padding: 0 0 75px 0;
 }
 #gallery, #team {
     padding-top:30px;
