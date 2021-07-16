@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Dave Horsfall
+title: Han Wu
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+I'm a Research Associate in the FinTrust group at Newcastle University, directed by [Prof. Aad Van Moorsel](https://www.ncl.ac.uk/computing/staff/profile/aadvanmoorsel.html). Before joining the FinTrust group at Newcastle University, I received my PhD degree of computer science from the Free University of Berlin, supervised by [Prof. Katinka Wolter](https://www.mi.fu-berlin.de/inf/groups/ag-tech/staff/0Current/wolter.html). I worked on the performance and reliability evaluation of streaming data processing strategies using machine learning models. Now I'm interested in the risk assessment of AI-based systems. My current research interests also focus on reinforcement learning and distributed ledgers. For my publications please see [here](https://www.researchgate.net/profile/Han-Wu-28/publications).
