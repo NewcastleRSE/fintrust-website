@@ -2325,10 +2325,7 @@ blockquote {
     }
 
 }
-
-
-
-
+/*-----------------Custom styles-----------------*/
 #content {
     margin-top: 70px; 
 }
@@ -2354,8 +2351,11 @@ blockquote {
     padding: 0 0 75px 0;
 }
 #gallery, #team {
-    padding-top:30px;
+    padding-top: 30px;
 }
 #team blockquote {
-    margin-bottom:50px;
+    margin-bottom: 50px;
+}
+#publications > .row > .row {
+    padding: 0;
 }

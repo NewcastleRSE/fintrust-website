@@ -2,7 +2,7 @@
 layout: default
 ---
 <main id="content">
-    <section id="page" class="clearfix">
+    <section id="publications" class="clearfix">
         <div class="row clearfix">
             <div class="col-1">
                 <div class="section-heading">
@@ -11,19 +11,26 @@ layout: default
                     {{ content }}
                 </div>
             </div>
-            {% for post in site.posts %}                        
+            {% for post in site.posts %}
+                {% assign loopindex = forloop.index | modulo: 2 %}
+                {% if loopindex == 1 %}
+                    <div class="row clearfix">
+                {% endif %}
                 <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
                     <div class="icon-block-description">
                         <a href="{{ post.url | relative_url }}">
                         <h4>{{ post.title }}</h4></a>
                         <p>{{ post.author }} | {{ post.date | date: "%-d %B %Y" }}</p>
                         <a href="{{ post.url | relative_url }}" class="button">
-                            READ MORE&nbsp;&nbsp;<i class="fa fa-play"></i>
+                            READ ARTICLE
                         </a>
                     </div>
                 </div>
-            {% endfor %}  
-        </div>
+                {% if loopindex != 1 %}
+                    </div>
+                {% endif %}            
+            {% endfor %}
+        </div>        
     </section>
 </main>
 
