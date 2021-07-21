@@ -102,13 +102,14 @@ layout: default
     <!--Content Section-->
     <div id="highlight" class="scrollto clearfix">
         <div class="row no-padding-bottom clearfix">
+            {% assign sortedPosts = site.posts | sort: 'date' | reverse %}
+            {% for post in sortedPosts limit:1 %}
             <!--Content Left Side-->
             <div class="col-3">
                 <!--User Testimonial-->
                 <blockquote class="testimonial text-right bigtest">
-                    <q>The third wave recognises that the ethical and social challenges associated with data and AI 
-                        are inextricably interwoven with broader, long-standing social, political and cultural factors</q>
-                    <footer>— Dr Mhairi Aitken, Newcastle University</footer>
+                    <q>{{ post.quote }}</q>
+                    <footer>— {{ post.source }}</footer>
                 </blockquote>
                 <!-- End of Testimonial-->
             </div>
@@ -117,25 +118,19 @@ layout: default
             <div class="col-3">
                 <div class="section-heading">
                     <h3>PUBLICATION HIGHLIGHT</h3>
-                    <h2 class="section-title">Simulating the Effects of Social Presence on Trust</h2>
-                    <p class="section-subtitle">In the past decade, the financial industry has experienced a technology revolution. While we witness a rapid progression towards a cashless society and 
-                        financial services that rely on socio-and-emotionally intelligent bots.</p>
+                    <h2 class="section-title">{{ post.title }}</h2>
+                    <p class="section-subtitle">{{ post.subtitle }}</p>
                 </div>
-                <p> We investigated features linked to bot trust, categorizing the top traits expected from a financial chatbot before consumers place trust 
-                    in them. Primarily, data security mattered to a large extent in the context of financial services, whether or not socio-emotional features were present. 
-                </p>
-                <p>
-                    Accuracy of bot messages and its conversational style were important features, whereas bot name, how the bot sounds and whether it resembles a human in 
-                    appearance appeared to be inconsequential. Our results imply that task-oriented financial bots are preferred.
-                </p>
-                <a href="{% link _posts/2020-06-27-Simulating-the-Effects-of-Social-Presence-on-Trust.markdown %}" class="button">
+                {{ post.content }}
+                <a href="{{ post.url }}" class="button">
                     READ MORE
                 </a>
             </div>
             <!--End Content Right Side-->
             <div class="col-3">
-                <img src="{{ "/assets/images/feature.webp" | relative_url }}" alt="Publication"/>
+                <img src="{{ "/assets/images/feature.webp" | relative_url }}" alt="Featured article"/>
             </div>
+            {% endfor %}
         </div>
     </div>
     <!--End of Content Section-->
@@ -262,25 +257,35 @@ layout: default
         <div class="row clearfix">
             <div class="col-3">
                 <div class="section-heading">
-                    <h3>PARTNERS</h3>
-                    <h2 class="section-title">We collaborate with</h2>
-                    <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
+                    <h3>FUNDING</h3>
+                    <h2 class="section-title">Relationships</h2>
+                    <p class="section-subtitle">FinTrust is funded by several organisations, and we collaberate with strategic partners who share interests in the goals of the project.</p>
                 </div>
             </div>
             <div class="col-2-3">
-                <a href="https://www.ncl.ac.uk/" class="col-3">
-                    <img src="{{ "/assets/images/company-images/company-logo1.webp" | relative_url }}" alt="Newcastle University"/>
+                <a href="{{ site.baseurl }}{% link partners/newcastle-university.md %}" class="col-3">
+                    <img src="{{ "/assets/images/company-images/newcastle-university.webp" | relative_url }}" alt="Newcastle University"/>
                     <div class="partner-overlay"><span>Newcastle University</span></div>
                 </a>
-                <a href="https://www.atombank.co.uk/" class="col-3">
-                    <img src="{{ "/assets/images/company-images/company-logo2.webp" | relative_url }}" alt="Atom Bank"/>
+                <a href="{{ site.baseurl }}{% link partners/atom-bank.md %}" class="col-3">
+                    <img src="{{ "/assets/images/company-images/atom-bank.webp" | relative_url }}" alt="Atom Bank"/>
                     <div class="partner-overlay"><span>Atom Bank</span></div>
                 </a>
-                <a href="https://www.turing.ac.uk/" class="col-3">
-                    <img src="{{ "/assets/images/company-images/company-logo3.webp" | relative_url }}" alt="The Alan Turing Institute"/>
+                <a href="{{ site.baseurl }}{% link partners/turing-institute.md %}" class="col-3">
+                    <img src="{{ "/assets/images/company-images/turing-institute.webp" | relative_url }}" alt="The Alan Turing Institute"/>
                     <div class="partner-overlay"><span>The Alan Turing Institute</span></div>
+                </a>
+                <a href="{{ site.baseurl }}{% link partners/bill-and-melinda-gates.md %}" class="col-3">
+                    <img src="{{ "/assets/images/company-images/bill-and-melinda-gates.webp" | relative_url }}" alt="Bill & Melinda Gates Foundation"/>
+                    <div class="partner-overlay"><span>Bill & Melinda Gates Foundation</span></div>
+                </a>
+                <a href="{{ site.baseurl }}{% link partners/digital-institute.md %}" class="col-3">
+                    <img src="{{ "/assets/images/company-images/digital-institute.webp" | relative_url }}" alt="Digital Institute"/>
+                    <div class="partner-overlay"><span>Digital Institute</span></div>
+                </a>
+                <a href="{{ site.baseurl }}{% link partners/ukri.md %}" class="col-3">
+                    <img src="{{ "/assets/images/company-images/ukri.webp" | relative_url }}" alt="UK Research and Innovation"/>
+                    <div class="partner-overlay"><span>UK Research and Innovation</span></div>
                 </a>
             </div>
         </div>

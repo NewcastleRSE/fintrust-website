@@ -1,12 +1,11 @@
 ---
-layout: page
-title:  "Establishing a social licence for Financial Technology: Reflections on the role of the private sector in pursuing ethical data practices"
-date:   2020-03-04 15:15:49 +0000
+layout: article
+title: "Establishing a social licence for Financial Technology: Reflections on the role of the private sector in pursuing ethical data practices"
+date: 2020-03-04
 author: Mhairi Aitken
-categories: trust
+authors: Ehsan Toreini; Mhairi Aitken; Kovila Coopamootoo; Karen Elliott; Carlos Gonzalez Zelaya；Aad van Moorsel
+link: https://doi.org/10.1177/2053951720908892
+doi: 10.1177/2053951720908892
+category: Publication
 ---
-**Authors:** *Ehsan Toreini; Mhairi Aitken; Kovila Coopamootoo; Karen Elliott; Carlos Gonzalez Zelaya；Aad van Moorsel*
-
 Current attention directed at ethical dimensions of data and Artificial Intelligence have led to increasing recognition of the need to secure and maintain public support for uses (and reuses) of people’s data. This is essential to establish a “Social Licence” for current and future practices. The notion of a “Social Licence” recognises that there can be meaningful differences between what is legally permissible and what is socially acceptable. Establishing a Social Licence entails public engagement to build relationships of trust and ensure that practices align with public values. While the concept of the Social Licence is well-established in other sectors – notably in relation to extractive industries – it has only very recently begun to be discussed in relation to digital innovation and data-intensive industries. This article therefore draws on existing literature relating to the Social Licence in extractive industries to explore the potential approaches needed to establish a Social Licence for emerging data-intensive industries. Additionally, it draws on well-established literature relating to trust (from psychology and organisational science) to examine the relevance of trust, and trustworthiness, for emerging practices in data-intensive industries. In doing so the article considers the extent to which pursuing a Social Licence might complement regulation and inform codes of practice to place ethical and social considerations at the heart of industry practice. We focus on one key industry: Financial Technology. We demonstrate the importance of combining technical and social approaches to address ethical challenges in data-intensive innovation (particularly relating to Artificial Intelligence) and to establish relationships of trust to underpin a Social Licence for Financial Technology. Such approaches are needed across all areas and industries of data-intensive innovation to complement regulation and inform the development of ethical codes of practice. This is important to underpin culture change and to move beyond rhetorical commitments to develop best practice putting ethics at the heart of innovation.
-
-*Full-text available [here](https://journals.sagepub.com/doi/pdf/10.1177/2053951720908892)*

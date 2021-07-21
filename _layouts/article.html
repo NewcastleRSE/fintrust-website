@@ -7,8 +7,14 @@ layout: default
             <div class="section-heading">
                 <h3>{{ page.category }}</h3>
                 <h2 class="section-title">{{ page.title }}</h2>
-            </div>
+                <h4>{{ page.authors }}</h2>
+                <strong>DOI:</strong> <a href="{{ page.link }}" target="_blank">{{ page.doi }}</a>
+            </div>                
+            <h3>ABSTRACT</h3>
             {{ content }}
+            <a href="{{ page.link }}" target="_blank" class="button">
+                READ FULL ARTICLE
+            </a>
         </div>
     </div>
 </section>
