@@ -2356,6 +2356,17 @@ blockquote {
 #team blockquote {
     margin-bottom: 50px;
 }
-#publications > .row > .row {
-    padding: 0;
+#articles > .row > .row,
+#team > .row > .row {
+        padding: 0;
+}
+.team-role {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.testimonial.classic footer {
+    font-size: 17px;
+    font-weight: bold;
 }
