@@ -1,0 +1,56 @@
+
+/*-----------------Custom styles-----------------*/
+#content {
+    margin-top: 70px;
+}
+#content ul {
+    padding-left: 40px;
+}
+#nav-trigger span:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    font-weight: 900;
+}
+#slvj-close-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    font-weight: 900;
+}
+#gallery a:before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f167";
+    font-weight: 900;
+}
+#gallery aside {
+    padding: 0 0 75px 0;
+}
+#gallery, #team {
+    padding-top: 30px;
+}
+#team blockquote {
+    margin-bottom: 50px;
+}
+#articles > .row > .row,
+#team > .row > .row {
+    padding: 0;
+}
+.team-role {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.testimonial.classic footer {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+/* handle phones and small screens */
+@media only screen and (max-width: 1024px) {
+    /*  Fix header on phone screens using a more specific  *
+     *  CSS rule than the one in namari-color.css:165      */
+    div#banner-content > div.col-38 > div.section-heading h1 {
+        font-size:48px;
+    }
+}
