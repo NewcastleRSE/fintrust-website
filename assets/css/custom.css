@@ -63,3 +63,8 @@
         margin: 0 -5px;
     }
 }
+
+/* Hide the scrollUp anchor which is set to z-index:(max 32-bit number) in a style= attr by JQuery! */
+a#scrollUp.lity-hidden {
+    display: none;
+}

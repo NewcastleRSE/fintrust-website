@@ -1,11 +1,6 @@
 "use strict";
 
 $(document).ready(function () {
-	/* Video Lightbox */
-	if (!!$.prototype.simpleLightboxVideo) {
-		$('.video').simpleLightboxVideo();
-	}
-
 	/*ScrollUp*/
 	if (!!$.prototype.scrollUp) {
 		$.scrollUp();
