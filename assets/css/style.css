@@ -1806,11 +1806,6 @@ blockquote {
         padding-bottom: 25px;
     }
 
-    /* Video */
-    .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
-        height: 270px !important;
-    }
-
     /* Footer */
     #landing-footer #copyright {
         float: left;
@@ -1901,11 +1896,6 @@ blockquote {
 
     /*-----------------Sections-----------------*/
 
-    /* Video */
-    .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
-        height: 370px !important;
-    }
-
     /* Footer */
     #landing-footer #copyright {
         float: left;
@@ -1961,13 +1951,6 @@ blockquote {
         margin-right: -40px;
         padding-left: 20px;
         padding-right: 20px;
-    }
-
-    /*-----------------Sections-----------------*/
-
-    /* Video */
-    .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
-        height: 432px !important;
     }
 
 }

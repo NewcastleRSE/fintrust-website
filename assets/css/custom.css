@@ -11,11 +11,6 @@
     content: "\f0c9";
     font-weight: 900;
 }
-#slvj-close-icon:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f00d";
-    font-weight: 900;
-}
 #gallery a:before {
     font-family: "Font Awesome 5 Brands";
     content: "\f167";
