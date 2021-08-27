@@ -53,4 +53,13 @@
     div#banner-content > div.col-38 > div.section-heading h1 {
         font-size:48px;
     }
+
+    /* Make text in h2 readable against image background on mobile */
+    div#banner-content > div.col-38 > div.section-heading h2 {
+        background-color: #fff;
+        display: inline;
+        line-height: 1.8;
+        padding: 2px 5px;
+        margin: 0 -5px;
+    }
 }
