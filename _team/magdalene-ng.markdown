@@ -2,4 +2,4 @@
 layout: page
 title: Magdalene Ng
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+Magdalene is a Research Associate in the FinTrust project and an Innovation Fellow at the Centre for Digital Citizens, where she is interested in investigating the human aspects of trust and privacy in FinTech.
