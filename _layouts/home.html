@@ -75,6 +75,7 @@ layout: default
         </div>
     </section>
     <!--End of Introduction-->
+
     <!--Gallery-->
     <div id="gallery">
         <div class="row clearfix text-center">
@@ -99,6 +100,7 @@ layout: default
         </div>             
     </div>
     <!--End of Gallery-->
+
     <!--Content Section-->
     <div id="highlight" class="scrollto clearfix">
         <div class="row no-padding-bottom clearfix">
@@ -134,6 +136,7 @@ layout: default
         </div>
     </div>
     <!--End of Content Section-->
+
     <!--Team-->
     <aside id="team" class="scrollto text-center" data-enllax-ratio=".2">
         <div class="row clearfix">
@@ -154,7 +157,7 @@ layout: default
                 </blockquote>
                 <blockquote class="col-3 testimonial classic">
                     <a href="{% link _team/kovila-coopamootoo.markdown %}"><img src="{{ "/assets/images/user-images/kovila-coopamootoo.webp" | relative_url }}" alt="Kovila Coopamootoo"/></a>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</q>
+                    <!-- <q>Lecturer in Human-Centred Privacy and Security at Newcastle University</q> -->
                     <a href="{% link _team/kovila-coopamootoo.markdown %}">
                         <footer>
                             <span class="team-role">Co-Investigator</span>
@@ -176,23 +179,13 @@ layout: default
             <div class="row clearfix">
                 <blockquote class="col-3 testimonial classic">
                     <a href="{% link _team/zhichao-ma.markdown %}"><img src="{{ "/assets/images/user-images/zhichao-ma.webp" | relative_url }}" alt="Zhichao Ma"/></a>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</q>
+                    <q>I am curious to explore the potentials that AI brings in the Financial industry.</q>
                     <a href="{% link _team/zhichao-ma.markdown %}">
                         <footer>
                             <span class="team-role">Research Associate</span>
                             Zhichao Ma
                         </footer>
                     </a>                      
-                </blockquote>
-                <blockquote class="col-3 testimonial classic">
-                    <a href="{% link _team/magdalene-ng.markdown %}"><img src="{{ "/assets/images/user-images/magdalene-ng.webp" | relative_url }}" alt="Magdalene Ng"/></a>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</q>
-                    <a href="{% link _team/magdalene-ng.markdown %}">
-                        <footer>
-                            <span class="team-role">Research Associate</span>
-                            Magdalene Ng
-                        </footer>
-                    </a>   
                 </blockquote>
                 <blockquote class="col-3 testimonial classic">
                     <a href="{% link _team/tasos-spiliotopoulos.markdown %}"><img src="{{ "/assets/images/user-images/tasos-spiliotopoulos.webp" | relative_url }}" alt="Tasos Spiliotopoulos"/></a>
@@ -204,8 +197,6 @@ layout: default
                         </footer>
                     </a>     
                 </blockquote>
-            </div>
-            <div class="row clearfix">
                 <blockquote class="col-3 testimonial classic">
                     <a href="{% link _team/han-wu.markdown %}"><img src="{{ "/assets/images/user-images/han-wu.webp" | relative_url }}" alt="Han Wu"/></a>
                     <q>I'm keen on understanding the risks we take when people place trust in AI technologies.</q>
@@ -216,6 +207,8 @@ layout: default
                         </footer>
                     </a>                      
                 </blockquote>
+            </div>
+            <div class="row clearfix">
             </div>
         </div>
         <div class="section-heading">
@@ -232,8 +225,8 @@ layout: default
                 </a>  
             </blockquote>
             <blockquote class="col-3 testimonial classic">
-                <a href="https://rse.ncldata.dev/"><img src="{{ "/assets/images/user-images/dave-horsfall.webp" | relative_url }}" alt="Kovila Coopamootoo"/></a>
-                <a href="https://rse.ncldata.dev/">
+                <a href="https://rse.ncldata.dev/dave-horsfall"><img src="{{ "/assets/images/user-images/dave-horsfall.webp" | relative_url }}" alt="Dave Horsfall"/></a>
+                <a href="https://rse.ncldata.dev/dave-horsfall">
                     <footer>
                         <span class="team-role">Senior Research Software Engineer</span>
                         Dave Horsfall
@@ -249,9 +242,19 @@ layout: default
                     </footer>
                 </a>   
             </blockquote>
+            <blockquote class="col-3 testimonial classic">
+                <a href="{% link _team/magdalene-ng.markdown %}"><img src="{{ "/assets/images/user-images/magdalene-ng.webp" | relative_url }}" alt="Magdalene Ng"/></a>
+                <a href="{% link _team/magdalene-ng.markdown %}">
+                    <footer>
+                        <span class="team-role">Research Associate</span>
+                        Magdalene Ng
+                    </footer>
+                </a>   
+            </blockquote>
         </div>        
     </aside>
     <!--End of Team-->
+
     <!--Partners-->
     <section id="partners" class="secondary-color scrollto clearfix">
         <div class="row clearfix">
