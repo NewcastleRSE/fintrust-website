@@ -193,11 +193,11 @@ section {
     position: relative;
 }
 
-.no-padding-bottom .row, .no-padding-bottom div, .no-padding-bottom.row {
+.no-padding-bottom .row, div.no-padding-bottom, .no-padding-bottom.row {
     padding-bottom: 0;
 }
 
-.no-padding-top.row, .no-padding-top div {
+.no-padding-top.row, div.no-padding-top {
     padding-top: 0;
 }
 
