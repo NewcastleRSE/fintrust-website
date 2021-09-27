@@ -3,7 +3,16 @@ layout: default
 ---
 <section id="content" class="clearfix">
     <div class="row clearfix">
+        {% if page.image %}
+        <div class="col-3">
+           {% if page.link %} <a href="{{ page.link }}">{% endif %}
+           <img src="{{ page.image }}"/>
+           {% if page.link %}</a>{% endif %}
+        </div>
+        <div class="col-2-3">
+        {% else %}
         <div class="col-1">
+        {% endif %}
             <div class="section-heading">
                 <h3>{{ page.category }}</h3>
                 <h2 class="section-title">{{ page.title }}</h2>
