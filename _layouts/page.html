@@ -6,7 +6,7 @@ layout: default
         {% if page.image %}
         <div class="col-3">
            {% if page.link %} <a href="{{ page.link }}">{% endif %}
-           <img src="{{ page.image }}"/>
+           <img src="{{ page.image }}" class="page-img {{ page.img-class }}"/>
            {% if page.link %}</a>{% endif %}
         </div>
         <div class="col-2-3">
