@@ -42,7 +42,7 @@
 
 
 /* handle phones and small screens */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
     /*  Fix header on phone screens using a more specific  *
      *  CSS rule than the one in namari-color.css:165      */
     div#banner-content > div.col-38 > div.section-heading h1 {
@@ -50,16 +50,36 @@
     }
 
     /* Make text in h2 readable against image background on mobile */
-    div#banner-content > div.col-38 > div.section-heading h2 {
+    div#banner-content{
+        background-color: rgba(255, 255, 255, .8);
+    }
+
+    /* Set header background */
+    #wrapper > header#banner {
+        background: url("../images/banner-images/banner-cropped.webp") no-repeat center center;
+        background-size: cover;
+    }
+    #banner-content > a.button {
         background-color: #fff;
-        display: inline;
-        line-height: 1.8;
-        padding: 2px 5px;
-        margin: 0 -5px;
+    }
+}
+
+/* Anything on medium screens and above (e.g. iPad) */
+@media only screen and (min-width: 768px) {
+    header#banner {
+        background: url("../images/banner-images/banner-image.webp") no-repeat center center padding-box;
+        background-size: cover;
+    }
+}
+
+/* Change background-size mode on wider screens */
+@media only screen and (min-width: 1245px) {
+    header#banner {
+        background-size: contain;
     }
 }
 
 /* Hide the scrollUp anchor which is set to z-index:(max 32-bit number) in a style= attr by JQuery! */
 a#scrollUp.lity-hidden {
-    display: none;
+    display: none !important;
 }
