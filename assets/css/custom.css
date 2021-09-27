@@ -73,6 +73,10 @@
     #banner-content > a.button {
         background-color: #fff;
     }
+
+    .hide-on-mobile {
+        display:none;
+    }
 }
 
 /* Anything on medium screens and above (e.g. iPad) */
