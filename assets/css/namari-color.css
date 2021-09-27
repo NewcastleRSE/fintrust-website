@@ -22,27 +22,27 @@ body {
 /* Default Link Color */
 
 a, .la-ball-triangle-path {
-    color:#bd2991;
+    color: #f6951e;
 }
 
 a:hover, #header.nav-solid nav a:hover {
-    color:#bd2991;
+    color:#f6951e;
 }
 
 /* Default Icon Color */
 
 .icon i {
-    color:#bd2991;
+    color:#f6951e;
 }
 
 /* Border Color */
 
 #banner .section-heading:before, .testimonial.classic footer:before {
-    background: #bd2991;
+    background: #2e3091;
 }
 
 .pricing-block-content:hover {
-    border-color:#bd2991;
+    border-color:#2e3091;
 }
 
 
@@ -68,8 +68,8 @@ a:hover, #header.nav-solid nav a:hover {
 /* Navigation Active State */
 
 #header.nav-solid .active {
-    color: #bd2991;
-    border-color: #bd2991;
+    color: #f6951e;
+    border-color: #f6951e;
 }    
 
 
@@ -82,7 +82,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Primary Background and Text Colors */
 
 .primary-color, .featured .pricing {
-    background-color:#bd2991;
+    background-color:#2e3091;
 }
 
 .primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
@@ -90,7 +90,7 @@ a:hover, #header.nav-solid nav a:hover {
 }
 
 .section-heading h2:after {
-    background:#bd2991;
+    background: #2e3091;
     content:"";
     display:block;
     width:30px;
@@ -279,8 +279,8 @@ h6 {
 /* Button Hover Color */
 
 .button:hover,  input[type="submit"]:hover {
-    border-color:#bd2991;
-    color:#bd2991;
+    border-color: #f6951e;
+    color:#f6951e;
 }
 
 
@@ -306,8 +306,8 @@ h6 {
 /* Button Hover Color */
 
 #banner .button:hover {
-    color:#bd2991;
-    border-color:#bd2991;
+    color:#f6951e;
+    border-color:#f6951e;
 }
 
 
