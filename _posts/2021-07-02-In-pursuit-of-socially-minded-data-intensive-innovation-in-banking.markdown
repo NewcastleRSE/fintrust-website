@@ -2,7 +2,7 @@
 layout: article
 title: "In pursuit of socially-minded data-intensive innovation in banking: A focus group study of public expectations of digital innovation in banking"
 date: 2021-07-02
-author: Ehsan Toreini
+author: Mhairi Aitken
 authors: Mhairi Aitken; Magdalene Ng; Dave Horsfall; Kovila Coopamootoo; Aad van Moorsel; Karen Elliott
 link: https://doi.org/10.1016/j.techsoc.2021.101666
 doi: 10.1016/j.techsoc.2021.101666
