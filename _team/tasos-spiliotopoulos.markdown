@@ -14,5 +14,6 @@ Informatics and Telematics at Harokopio University and the Information Systems L
 University of Athens in Greece. 
 
 He holds a PhD in Human-Computer Interaction, an MSc in Advanced Information Systems and a BSc in Computer Science. 
-Key topics in his research include privacy, trust, security, human-centred design, computational social science, social 
-network analysis, location sharing, and computer-mediated communication.
+Key topics in his research include privacy, trust, security, human-centered design, computational social science, computer-mediated communication, financial technologies, and digital identities.
+
+You can find more details at https://tasos-spiliotopoulos.com
