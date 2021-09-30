@@ -85,12 +85,22 @@
         background: url("../images/banner-images/banner-image.webp") no-repeat center center padding-box;
         background-size: cover;
     }
+
+    .testimonial.classic img {
+        max-height: 230px;
+        height: 230px;
+    }
 }
 
 /* Change background-size mode on wider screens */
 @media only screen and (min-width: 1245px) {
     header#banner {
         background-size: contain;
+    }
+
+    .testimonial.classic img {
+        max-height: 255px;
+        height: 255px;
     }
 }
 
