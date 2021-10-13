@@ -60,3 +60,23 @@ $(window).load(function () { // makes sure the whole site is loaded
 	}
 
 });
+
+/* Protect email addresses from basic spam crawlers */
+$(document).ready(function () {
+	document.querySelectorAll(".email").forEach(function(e) {
+		let separator = e.querySelector(".email-separator")
+		let address = e.querySelector(".email-address").innerText
+		let domain = e.querySelector(".email-domain").innerText
+		let anchor = document.createElement('a')
+
+		// Replace '[at]' with '@',
+		// Set the new anchor tag's href URL to "mailto:email@address"
+		// Place it in the DOM
+		// And squash any remaining whitespace
+		separator.innerHTML = separator.innerHTML.replace("[at]", "@")
+		anchor.href = 'mailto:' + address + '@' + domain
+		e.parentNode.insertBefore(anchor, e)
+		anchor.appendChild(e)
+		e.innerHTML = e.innerHTML.replace(/\n/g, "").replace(/\>[\t ]+\</g, "><")
+	})
+});
