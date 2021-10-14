@@ -108,3 +108,11 @@
 a#scrollUp.lity-hidden {
     display: none !important;
 }
+
+/* Resize the google form on mobile */
+@media only screen and (max-width: 767px) {
+    #contactGoogleForm {
+        width:100%;
+        height:1150px;
+    }
+}
