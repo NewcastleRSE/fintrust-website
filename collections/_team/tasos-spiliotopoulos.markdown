@@ -1,7 +1,11 @@
 ---
 layout: page
 title: Tasos Spiliotopoulos
+role: Research Associate
+quote: A human-centric approach is key for the design of effective and socially responsible technological systems.
 image: /assets/images/user-images/tasos-spiliotopoulos.webp
+order: 6
+status: active
 img-class: round
 ---
 Tasos Spiliotopoulos is a Human-Computer Interaction researcher with a focus on social technologies and human-centred 

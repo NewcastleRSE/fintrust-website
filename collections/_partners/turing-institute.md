@@ -3,6 +3,7 @@ layout: page
 title: The Alan Turing Institute
 image: /assets/images/company-images/turing-institute.webp
 link: https://www.turing.ac.uk/
+order: 3
 ---
 The work on Financial Inclusion is done in collaboration with the Alan Turing Institute's research programme in Trustworthy Digital Infrastructure for Identity Systems.
 

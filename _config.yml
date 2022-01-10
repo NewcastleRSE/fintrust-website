@@ -32,9 +32,15 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections_dir: collections
+
 collections:
   team:
-    output: true   
+    output: true
+  partners:
+    output: true
+  projects:
+    output: true
 
 include: ['.well-known']
 

@@ -1,7 +1,11 @@
 ---
 layout: page
 title: Kovila Coopamootoo
+role: Co-Investigator
+quote: I am passionate about understanding diverse user experiences and developing technologies that provide equal opportunities.
 image: /assets/images/user-images/kovila-coopamootoo.webp
+order: 2
+status: active
 img-class: round
 ---
 

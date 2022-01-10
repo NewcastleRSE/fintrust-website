@@ -159,133 +159,72 @@ layout: default
                 <h2 class="section-title">The FinTrust Team</h2>
             </div>
             <div class="row clearfix">
-                <blockquote class="col-3 testimonial classic">
-                    <a href="{% link _team/aad-van-moorsel.markdown %}"><img src="{{ "/assets/images/user-images/aad-van-moorsel.webp" | relative_url }}" alt="Aad Van Moorsel"/></a>
-                    <q>I've always been fascinated to truly understand system characteristics as complex as trust.</q>
-                    <a href="{% link _team/aad-van-moorsel.markdown %}">
-                        <footer>
-                            <span class="team-role">Principal Investigator</span>
-                            Aad van Moorsel
-                        </footer>
-                    </a>
-                </blockquote>
+                {% assign sortedMembers = site.team | where:"status","active" | sort: 'order' %}
+                {% for member in sortedMembers %}
 
-                <blockquote class="col-3 testimonial classic">
-                    <a href="{% link _team/kovila-coopamootoo.markdown %}"><img src="{{ "/assets/images/user-images/kovila-coopamootoo.webp" | relative_url }}" alt="Kovila Coopamootoo"/></a>
-                     <q>I am passionate about understanding diverse user experiences and developing technologies that provide equal opportunities.</q>
-                    <a href="{% link _team/kovila-coopamootoo.markdown %}">
-                        <footer>
-                            <span class="team-role">Co-Investigator</span>
-                            Kovila Coopamootoo
-                        </footer>
-                    </a>                     
-                </blockquote>
+                    {% comment %} Ensure the last individual(s) are always centred {% endcomment %}
+                    {% assign centerlastline = forloop.length | modulo: 3 %}
+                    {% assign forlooplengthminus1 = forloop.length | minus: 1 %}
 
-                <blockquote class="col-3 testimonial classic">
-                    <a href="{% link _team/karen-elliott.markdown %}"><img src="{{ "/assets/images/user-images/karen-elliot.webp" | relative_url }}" alt="Karen Elliot"/></a>
-                    <q>I view society as a complex adaptive system and work to facilitate an equitable digital society in exploring trust and trustworthy technologies.</q>
-                    <a href="{% link _team/karen-elliott.markdown %}">
-                        <footer>
-                            <span class="team-role">Co-Investigator, Senior Lecturer (FinTech)</span>
-                            Karen Elliott
-                        </footer>
-                    </a>               
-                </blockquote>
+                    {% if forloop.index == forloop.length and centerlastline == 1 %}
+                        <div class="col-3 hide-on-mobile"></div>    <!-- Centre last individual -->
+                    {% elsif forloop.index == forlooplengthminus1 and centerlastline == 2 %}
+                        <div class="col-6 hide-on-mobile"></div>    <!-- Centre last two individuals -->
+                    {% endif %}
 
-                <blockquote class="col-3 testimonial classic">
-                    <a href="https://rse.ncldata.dev/samantha-finnigan"><img src="{{ "/assets/images/user-images/samantha-finnigan.webp" | relative_url }}" alt="Samantha Finnigan"/></a>
-                    <q>I create software prototypes for research to understand trust in FinTech.</q>
-                    <a href="https://rse.ncldata.dev/samantha-finnigan">
-                        <footer>
-                            <span class="team-role">Research Software Engineer</span>
-                            Samantha Finnigan
-                        </footer>
-                    </a>
-                </blockquote>
+                    {% assign myurl = member.url | relative_url %}
+                    {% if member.custom_url %}
+                        {% assign myurl = member.custom_url %}
+                    {% endif %}
 
-                <blockquote class="col-3 testimonial classic">
-                    <a href="{% link _team/zhichao-ma.markdown %}"><img src="{{ "/assets/images/user-images/zhichao-ma.webp" | relative_url }}" alt="Zhichao Ma"/></a>
-                    <q>I am driven by curiosity to explore the potentials that AI and Fintech bring to the financial service industry.</q>
-                    <a href="{% link _team/zhichao-ma.markdown %}">
-                        <footer>
-                            <span class="team-role">Research Associate</span>
-                            Zhichao Ma
-                        </footer>
-                    </a>                      
-                </blockquote>
-
-                <blockquote class="col-3 testimonial classic">
-                    <a href="{% link _team/tasos-spiliotopoulos.markdown %}"><img src="{{ "/assets/images/user-images/tasos-spiliotopoulos.webp" | relative_url }}" alt="Tasos Spiliotopoulos"/></a>
-                    <q>A human-centric approach is key for the design of effective and socially responsible technological systems.</q>
-                    <a href="{% link _team/tasos-spiliotopoulos.markdown %}">
-                        <footer>
-                            <span class="team-role">Research Associate</span>
-                            Tasos Spiliotopoulos
-                        </footer>
-                    </a>     
-                </blockquote>
-
-                <!-- Centre last individual on line -->
-                <div class="col-3 hide-on-mobile"></div>
-
-                <blockquote class="col-3 testimonial classic">
-                    <a href="{% link _team/han-wu.markdown %}"><img src="{{ "/assets/images/user-images/han-wu.webp" | relative_url }}" alt="Han Wu"/></a>
-                    <q>I'm keen on understanding the risks we take when people place trust in AI technologies.</q>
-                    <a href="{% link _team/han-wu.markdown %}">
-                        <footer>
-                            <span class="team-role">Research Associate</span>
-                            Han Wu
-                        </footer>
-                    </a>
-                </blockquote>
-
+                    <blockquote class="col-3 testimonial classic">
+                        <a href="{{ myurl }}">
+                            <img src="{{ member.image | relative_url }}" alt="{{ member.title }}"/>
+                        </a>
+                        <q>{{ member.quote }}</q>
+                        <a href="{{ myurl }}">
+                            <footer>
+                                <span class="team-role">{{ member.role }}</span>
+                                {{ member.title }}
+                            </footer>
+                        </a>
+                    </blockquote>
+                {% endfor %}
             </div>
         </div>
+
         <div class="section-heading">
             <h3>Team Alumni</h3>
         </div>
         <div class="row clearfix">
-            <blockquote class="col-3 testimonial classic">
-                <a href="https://www.turing.ac.uk/people/research-fellows/mhairi-aitken"><img src="{{ "/assets/images/user-images/mhairi-aitken.webp" | relative_url }}" alt="Mhairi Aitken"/></a>
-                <a href="https://www.turing.ac.uk/people/research-fellows/mhairi-aitken">
-                    <footer>
-                        <span class="team-role">Ethics Research Fellow</span>
-                        Mhairi Aitken
-                    </footer>
-                </a>  
-            </blockquote>
+            {% assign sortedMembers = site.team | where:"status","alumnus" | sort: 'order' %}
+            {% for member in sortedMembers %}
 
-            <blockquote class="col-3 testimonial classic">
-                <a href="https://rse.ncldata.dev/dave-horsfall"><img src="{{ "/assets/images/user-images/dave-horsfall.webp" | relative_url }}" alt="Dave Horsfall"/></a>
-                <a href="https://rse.ncldata.dev/dave-horsfall">
-                    <footer>
-                        <span class="team-role">Senior Research Software Engineer</span>
-                        Dave Horsfall
-                    </footer>
-                </a>                    
-            </blockquote>
+                {% assign centerlastline = forloop.length | modulo: 3 %}
+                {% assign forlooplengthminus1 = forloop.length | minus: 1 %}
 
-            <blockquote class="col-3 testimonial classic">
-                <a href="{% link _team/magdalene-ng.markdown %}"><img src="{{ "/assets/images/user-images/magdalene-ng.webp" | relative_url }}" alt="Magdalene Ng"/></a>
-                <a href="{% link _team/magdalene-ng.markdown %}">
-                    <footer>
-                        <span class="team-role">Research Associate</span>
-                        Magdalene Ng
-                    </footer>
-                </a>
-            </blockquote>
+                {% if forloop.index == forloop.length and centerlastline == 1 %}
+                    <div class="col-3 hide-on-mobile"></div>    <!-- Centre last individual -->
+                {% elsif forloop.index == forlooplengthminus1 and centerlastline == 2 %}
+                    <div class="col-6 hide-on-mobile"></div>    <!-- Centre last two individuals -->
+                {% endif %}
 
-            <div class="col-3 hide-on-mobile"></div>
-
-            <blockquote class="col-3 testimonial classic">
-                <a href="https://www.durham.ac.uk/staff/ehsan-toreini/"><img src="{{ "/assets/images/user-images/ehsan-toreini.webp" | relative_url }}" alt="Ehsan Toreini"/></a>
-                <a href="https://www.durham.ac.uk/staff/ehsan-toreini/">
-                    <footer>
-                        <span class="team-role">Assistant Professor</span>
-                        Ehsan Toreini
-                    </footer>
-                </a>   
-            </blockquote>
+                {% assign myurl = member.url | relative_url %}
+                {% if member.custom_url %}
+                    {% assign myurl = member.custom_url %}
+                {% endif %}
+                <blockquote class="col-3 testimonial classic">
+                    <a href="{{ myurl }}">
+                        <img src="{{ member.image | relative_url }}" alt="{{ member.title }}"/>
+                    </a>
+                    <a href="{{ myurl }}">
+                        <footer>
+                            <span class="team-role">{{ member.role }}</span>
+                            {{ member.title }}
+                        </footer>
+                    </a>
+                </blockquote>
+            {% endfor %}
         </div>        
     </aside>
     <!--End of Team-->
@@ -301,30 +240,13 @@ layout: default
                 </div>
             </div>
             <div class="col-2-3">
-                <a href="{{ site.baseurl }}{% link partners/newcastle-university.md %}" class="col-3">
-                    <img src="{{ "/assets/images/company-images/newcastle-university.webp" | relative_url }}" alt="Newcastle University"/>
-                    <div class="partner-overlay"><span>Newcastle University</span></div>
+                {% assign sortedPartners = site.partners | sort: 'order' %}
+                {% for partner in sortedPartners %}
+                <a href="{{ partner.url | relative_url }}" class="col-3">
+                    <img src="{{ partner.image | relative_url }}" alt="{{ partner.title }}"/>
+                    <div class="partner-overlay"><span>{{ partner.title }}</span></div>
                 </a>
-                <a href="{{ site.baseurl }}{% link partners/atom-bank.md %}" class="col-3">
-                    <img src="{{ "/assets/images/company-images/atom-bank.webp" | relative_url }}" alt="Atom Bank"/>
-                    <div class="partner-overlay"><span>Atom Bank</span></div>
-                </a>
-                <a href="{{ site.baseurl }}{% link partners/turing-institute.md %}" class="col-3">
-                    <img src="{{ "/assets/images/company-images/turing-institute.webp" | relative_url }}" alt="The Alan Turing Institute"/>
-                    <div class="partner-overlay"><span>The Alan Turing Institute</span></div>
-                </a>
-                <a href="{{ site.baseurl }}{% link partners/gates-foundation.md %}" class="col-3">
-                    <img src="{{ "/assets/images/company-images/gates-foundation.webp" | relative_url }}" alt="Bill & Melinda Gates Foundation"/>
-                    <div class="partner-overlay"><span>Bill & Melinda Gates Foundation</span></div>
-                </a>
-                <a href="{{ site.baseurl }}{% link partners/ukri.md %}" class="col-3">
-                    <img src="{{ "/assets/images/company-images/ukri.webp" | relative_url }}" alt="UK Research and Innovation"/>
-                    <div class="partner-overlay"><span>UK Research and Innovation</span></div>
-                </a>
-                <a href="{{ site.baseurl }}{% link partners/fintech.md %}" class="col-3">
-                    <img src="{{ "/assets/images/company-images/fintech.webp" | relative_url }}" alt="Fintech National Network"/>
-                    <div class="partner-overlay"><span>Fintech National Network</span></div>
-                </a>
+                {% endfor %}
             </div>
         </div>
     </section>
