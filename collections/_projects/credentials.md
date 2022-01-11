@@ -28,3 +28,10 @@ accessed at:
   - [https://github.com/NewcastleRSE/fintrust-vc-issuer](https://github.com/NewcastleRSE/fintrust-vc-issuer)
   - [https://github.com/NewcastleRSE/fintrust-vc-verifier](https://github.com/NewcastleRSE/fintrust-vc-verifier)
 
+These repositories are currently private but can be accessed on request. We will be releasing these publicly
+in due course. For the time being, please request access using our [contact form](/contact.html), or by emailing
+<span class="email">
+    <span class="email-address">fintrust</span>
+    <span class="email-separator">@</span>
+    <span class="email-domain">newcastle.ac.uk</span>
+</span>
