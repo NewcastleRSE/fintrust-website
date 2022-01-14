@@ -19,9 +19,13 @@ them securely.
 
 <!--more-->
 
+This project was part of the Trustworthy Digital Infrastructure for Identity Systems project, led by the Turing Institute
+and funded through a grant from the Bill & Melinda Gates Foundation ([INV-001309](https://www.gatesfoundation.org/about/committed-grants/2019/12/INV001309)).
+
 For more information, please read our [final project report](/assets/pdf/D6_Finclusion_final_report.pdf)
 on our verifiable credentials Finclusion project.
 
+## Code
 The project is split into two code repositories: the issuer and the verifier. These can be
 accessed at:
 
@@ -35,3 +39,5 @@ in due course. For the time being, please request access using our [contact form
     <span class="email-separator">@</span>
     <span class="email-domain">newcastle.ac.uk</span>
 </span>
+
+The project design is described fully in our [Software Design Specification (SDS) Document](/assets/pdf/%5BSDS%5D%20Trustworthy%20Digital%20Infrastructure%20for%20Identity%20Systems.pdf).
