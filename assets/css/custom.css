@@ -109,10 +109,13 @@ a#scrollUp.lity-hidden {
     display: none !important;
 }
 
-/* Resize the google form on mobile */
-@media only screen and (max-width: 767px) {
-    #contactGoogleForm {
-        width:100%;
-        height:1150px;
-    }
+/* Contact form styles */
+.contact-form label {
+    width: 50%;
+    display: inline-block;
+    padding: 10px 0;
+}
+.contact-form textarea, .contact-form input {
+    width: 100%;
+    display: inline-block;
 }
