@@ -2,6 +2,13 @@
 layout: default
 ---
 <section id="content" class="clearfix">
+    {% if page.banner %}
+    <div class="row no-padding-top no-padding-bottom">
+        <div class="col-1">
+            <img src="{{ page.banner }}" class="page-img">
+        </div>
+    </div>
+    {% endif %}
     <div class="row clearfix">
         {% if page.image %}
         <div class="col-3">
@@ -20,4 +27,38 @@ layout: default
             {{ content }}
         </div>
     </div>
+
+    {% if page.nav %}
+    <div class="row no-padding-top no-padding-bottom post-nav">
+        <div class="col-1">
+            <div class="post-nav-previous">
+                {% if page.previous.url %}
+                <a class="button" href="{{page.previous.url}}">
+                    <span class="unsighted">Previous:</span>
+                    <span aria-hidden="true">&laquo;</span>
+                    {{page.previous.title}}
+                </a>
+                {% endif %}
+            </div>
+
+            <div class="post-nav-next">
+                {% if page.next.url %}
+                {% assign next_post_title_array = page.next.title | split: " " %}
+                {% assign next_post_cape_length = next_post_title_array | size | minus: 1 %}
+                {% assign next_post_cape = page.next.title | truncatewords: next_post_cape_length, "" %}
+                {% assign next_post_spit = next_post_title_array | last %}
+                <a class="button" href="{{page.next.url}}">
+                    <span class="unsighted">Next:</span>
+                    {{next_post_cape}}
+                    <span style="white-space: nowrap;">
+                        {{next_post_spit}}
+                    <span aria-hidden="true">&raquo;</span>
+                    </span>
+                </a>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
 </section>

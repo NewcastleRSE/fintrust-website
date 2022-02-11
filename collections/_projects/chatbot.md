@@ -10,6 +10,8 @@ link: https://github.com/NewcastleRSE/fintrust-chatbot-framework
 icon: fa-keyboard
 category: Project
 excerpt_separator: <!--more-->
+banner: /assets/images/wordclouds/chatbots.webp
+nav: true
 ---
 
 How can we engineer trust into conversational interfaces? Within this project, we prototyped

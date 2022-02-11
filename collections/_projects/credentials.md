@@ -10,6 +10,8 @@ link: https://github.com/NewcastleRSE/fintrust-vc-verifier
 icon: fa-id-card
 category: Project
 excerpt_separator: <!--more-->
+banner: /assets/images/wordclouds/vcs.webp
+nav: true
 ---
 
 Can blockchain technologies support vulnerable and financially excluded customers? In this project, we implemented a prototype decentralised identity system using the Microsoft ION platform, to allow customers to retain ownership of their personal details and to share them securely. 

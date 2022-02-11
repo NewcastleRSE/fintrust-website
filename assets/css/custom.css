@@ -119,3 +119,35 @@ a#scrollUp.lity-hidden {
     width: 100%;
     display: inline-block;
 }
+
+/* Prev/next links on pages (with screenreader compat) */
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.post-nav div {
+    flex: 1 1 0;
+}
+.post-nav div:first-child {
+    padding-right: 1em;
+    float: left;
+}
+.post-nav div:last-child {
+    padding-left: 1em;
+    text-align: right;
+}
+
+.unsighted {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}

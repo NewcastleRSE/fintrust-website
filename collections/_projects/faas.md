@@ -2,14 +2,16 @@
 layout: page
 title: Fairness as a Service
 date: 2020-06-12
-authors: 
+authors:
+  - Aad van Moorsel
   - Dave Horsfall
   - Ehsan Toreini
-  - Aad van Moorsel
 link: https://github.com/NewcastleRSE/fintrust-faas
 icon: fa-concierge-bell
 category: Project
 excerpt_separator: <!--more-->
+banner: /assets/images/wordclouds/faas.webp
+nav: true
 ---
 
 Can we determine the fairness of algorithms using a software-based service? As the
