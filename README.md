@@ -21,7 +21,9 @@ Newcastle University
 
 ## Getting Started
 
-Commits to this repo will be automatically published within a few minutes to the <https://fintrustresearch.com> website. For development, you can clone this repo locally, and then [run the Jekyll development website](https://jekyllrb.com/docs/) on your machine.
+Commits to this repo will be automatically published within a few minutes to the <https://fintrustresearch.com> website. This means that you can open the markdown (`*.md`) files in the GitHub editor to make changes to the site text. When those changes are committed, they will be published to the live website within a couple of minutes. All articles are stored under the `collections` folder in the root of the repository. Just open the file you want to change in GitHub, and click the pencil icon ("Edit this file") at the top right-hand corner of the preview.
+
+For development and testing, you can clone this repo locally, and then [run the Jekyll development website](https://jekyllrb.com/docs/) on your machine.
 
 ### Prerequisites
 
