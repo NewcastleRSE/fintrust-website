@@ -2,10 +2,6 @@
 layout: page
 title: Verifiable Credentials
 date: 2020-04-01
-authors: 
-  - Dave Horsfall
-  - Kovila Coopamootoo
-  - Aad van Moorsel
 link: https://github.com/NewcastleRSE/fintrust-vc-verifier
 icon: fa-id-card
 category: Project

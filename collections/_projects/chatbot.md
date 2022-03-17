@@ -2,10 +2,6 @@
 layout: page
 title: Chatbot Framework
 date: 2020-06-12
-authors:
-  - Dave Horsfall
-  - Kovila Coopamootoo
-  - Aad van Moorsel
 link: https://github.com/NewcastleRSE/fintrust-chatbot-framework
 icon: fa-keyboard
 category: Project
