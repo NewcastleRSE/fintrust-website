@@ -5,12 +5,24 @@ date: 2020-06-12
 link: https://github.com/NewcastleRSE/fintrust-faas
 icon: fa-concierge-bell
 category: Project
-excerpt: "How we talk about trust is subject to assumptions on what 'trust' means: how we understand it at a social level is not the same as trustworthiness at the systems level."
+excerpt_separator: <!--more-->
 banner: /assets/images/wordclouds/faas.webp
 nav: true
 ---
 
+How we talk about trust is subject to assumptions on what 'trust' means: how we understand it at a social level is not the same as trustworthiness at the systems level.
 
+Things to consider:
+ * How does your company understand human versus technical trust?
+ * How do your customers or service users perceive trust?
+ * How does your organisation measure trust and build trustworthy technologies?
+
+We found that:
+ * People's trust perceptions and beliefs surrounds that an organisation or system is honest, reliable, or safe.
+ * Each of us will imagine what it means to trust in slightly different ways. 
+ * For engineers and designers, "trustworthiness" is concerned with the "FEAS" properties of machine learning systems: Fairness, Explainability, Auditability and Safety.
+
+<!--more-->
 
 ## Understanding the difference between "Trust" and "Trustworthiness"
 
@@ -24,9 +36,11 @@ Machine learning pipelines can be broken down into stages: the data-centric stag
 <img src="/assets/images/chainoftrust.webp" style="max-width: 512px; margin: 0 auto; display:block;"/>
 
 ### Fairness
+
 Fairness is the property of non-discrimination. Machine learning algorithms are not deliberately built with planned bias: they are not inherently fair or unfair. However, if unfairness and discrimination from the real world is reflected in training datasets, this can result in the replication of bias against minority groups and an unfair outcome for people. Designing discrimination-free models is therefore a challenging problem.
 
 ### Explainability
+
 Explainability means the ability to understand why a result is the way it is. It is often used interchangeably with "transparency". For simple types of predictive model, explainability can be achieved through model-specific explanations. More complex models such as neural networks operate in a non-linear fashion, which means they are effectively a "black box". Various frameworks have been proposed to explain how a deep learning model reaches a result, but it is widely agreed that there is still no single consensus on how to do it.
 
 ### Auditiability
@@ -34,6 +48,7 @@ Explainability means the ability to understand why a result is the way it is. It
 Auditability is about making a machine learning process transparent to stakeholders. For third-parties to verify the operation of a model, we must establish an audit trail. In the event that bias appears in model outcomes, this can help to infer whether the bias was present in the training data, and whether data preparation activities affected this. This becomes key in the implementation of regulations such as the European GDPR legislation.
 
 ### Safety
+
 Safety means the robust operation of systems in real-life situations, without loss of data, privacy leaks, or compromising cyber-security. This covers a wide variety of concerns: from driverless cars which do not crash, to safeguarding of data against privacy attacks. For example, a machine learning system might leak confidential information if such is used within its training dataset, and an attacker might exploit design weaknesses or implementation bugs within a system to expose this.
 
 
