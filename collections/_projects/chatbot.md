@@ -10,9 +10,19 @@ banner: /assets/images/wordclouds/chatbots.webp
 nav: true
 ---
 
-How can we engineer trust into conversational user interfaces? Within this project, we explored peoples' attitudes to managing their financial assets using a chatbot. Given the results of this work, we prototyped a conversational interface using the [Google DialogFlow](https://cloud.google.com/dialogflow/) conversational analysis AI.
+How can we engineer trust into conversational user interfaces? 
+
+Things to consider:
+ * Do you need a chatbot? 
+ * Have you asked your customers what they prefer?
+
+We found that:
+ * Your customers may find it easier to trust a chatbot which seems less human
+ * Hybrid chatbots which give an option to chat to a human may be preferred
 
 <!--more-->
+
+Within this project, we explored peoples' attitudes to managing their financial assets using a chatbot. Given the results of this work, we prototyped a conversational interface using the [Google DialogFlow](https://cloud.google.com/dialogflow/) conversational analysis AI.
 
 A chatbot is an artificial intelligence application that can imitate a real conversation with a human in their natural language. Chatbots enable communication via text or audio on websites, messaging applications, mobile apps, or telephone, leading to potential for the inclusion of groups of people who would otherwise be excluded by existing online financial technologies.
 
