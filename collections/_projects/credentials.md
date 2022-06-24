@@ -10,13 +10,26 @@ banner: /assets/images/wordclouds/vcs.webp
 nav: true
 ---
 
-Can blockchain technologies support vulnerable and financially excluded customers? In this project, we implemented a prototype decentralised identity system using the Microsoft ION platform, to allow customers to retain ownership of their personal details and to share them securely. 
+Can blockchain technologies support vulnerable and financially excluded customers? 
 
+Things to consider:
+ * Are you serving customers who meet the FCA's vulnerability drivers?
+ * Do you know which of your customers are in a vulnerable situation?
+ * Do you check and update the vulnerability status of your customers?
+
+We found that:
+ * Over 53% of the UK population sit under the four FCA drivers of vulnerability.
+ * Most technology is not built to adapt to vulnerabilities.
+ * Other forms of digital identity can meet KYC (Know Your Customer) FCA regulations to drive financial inclusion, and can help meet ESG (Environmental Social Governance) and SDG (Sustainable Development Goals) UN directives.
+ 
 <!--more-->
+
+In this project, we implemented a prototype decentralised identity system using the Microsoft ION platform, to allow customers to retain ownership of their personal details and to share them securely. 
 
 This project was part of the Trustworthy Digital Infrastructure for Identity Systems project, led by the Turing Institute and funded through a grant from the Bill & Melinda Gates Foundation ([INV-001309](https://www.gatesfoundation.org/about/committed-grants/2019/12/INV001309)).
 
 For more information, please read our [final project report](/assets/pdf/D6_Finclusion_final_report.pdf) on our verifiable credentials Finclusion project.
+
 
 ## Using Verifiable Credentials to identify vulnerable customers in finance
 
