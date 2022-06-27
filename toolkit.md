@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: toolkit 
 title: FinTrust Trust Engineering Toolkit
 category: Projects
 ---

@@ -2,7 +2,7 @@
 layout: default
 ---
 <main id="content">
-    <section id="projects" class="clearfix">
+    <section id="toolkit" class="clearfix">
         <div class="row">
             <div class="col-1">
                 <div class="section-heading">
@@ -12,27 +12,26 @@ layout: default
                 </div>
             </div>
         </div>
-
-        {% for project in site.projects %}
+        {% for tkpage in site.toolkit %}
         <div class="row clearfix no-padding-bottom no-padding-top">
 
             <div class="col-4 hide-on-mobile"></div>
 
             <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
                 <div class="icon">
-                    <i class="fa {{ project.icon }} fa-2x"></i>
+                    <i class="fa {{ tkpage.icon }} fa-2x"></i>
                 </div>
                 <div class="icon-block-description">
-                    <a href="{{ project.url | relative_url }}">
-                    <h4>{{ project.title }}</h4></a>
-                    <p>{% for a in project.authors %}
+                    <a href="{{ tkpage.url | relative_url }}">
+                    <h4>{{ tkpage.title }}</h4></a>
+                    <p>{% for a in tkpage.authors %}
                            {% assign lenmin1 = forloop.length | minus: 1 %}
                            {{a}}{% if forloop.index < lenmin1 %},{% elsif forloop.index == lenmin1 %} and {% endif %}
                         {% endfor %}
-                        | <em>{{ project.date | date: "%B %Y" }}</em></p>
+                        | <em>{{ tkpage.date | date: "%B %Y" }}</em></p>
                 </div>
-                <p>{{ project.excerpt }}</p>
-                <a href="{{ project.url | relative_url }}" class="button">
+                <p>{{ tkpage.excerpt }}</p>
+                <a href="{{ tkpage.url | relative_url }}" class="button">
                     View Project Details
                 </a>
             </div>

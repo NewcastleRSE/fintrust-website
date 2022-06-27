@@ -39,7 +39,7 @@ collections:
     output: true
   partners:
     output: true
-  projects:
+  toolkit:
     output: true
 
 include: ['.well-known']
