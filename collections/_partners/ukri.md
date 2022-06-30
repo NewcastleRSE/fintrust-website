@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UK Research and Innovation
-image: /assets/images/company-images/ukri.webp
+image: /assets/images/company-images/ukri-epsrc.webp
 link: https://www.ukri.org/
 order: 5
 ---
