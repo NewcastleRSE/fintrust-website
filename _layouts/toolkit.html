@@ -3,15 +3,22 @@ layout: default
 ---
 <main id="content">
     <section id="toolkit" class="clearfix">
-        <div class="row">
-            <div class="col-1">
+        <div class="row clearfix">
+            <div class="col-2">
                 <div class="section-heading">
                     <h3>{{ page.category }}</h3>
                     <h2 class="section-title">{{ page.title }}</h2>
                     {{ content }}
                 </div>
             </div>
+            <div class="col-2 hide-on-mobile">
+                <img src="../assets/images/banner-images/banner-image.webp"
+                     alt="Thinker logo"
+                     style="width: 465px; height: 658px; object-fit: cover; object-position: 80% 0;"
+                />
+            </div>
         </div>
+
         {% for tkpage in site.toolkit %}
         <div class="row clearfix no-padding-bottom no-padding-top">
 
