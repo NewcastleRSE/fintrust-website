@@ -37,6 +37,9 @@ We compared two hypothetical chatbots: "Emma" described with human-like emotive 
 
 Following this research, the decision was made to create a prototype chatbot using Google DialogFlow. In order to recognise user commands in typed natural language phrases, a language model is required to 'understand' what the end user wants. This is called natural language processing, or 'NLP'. We can leverage existing commercial technologies for this purpose, and our [technology review document](/assets/pdf/Chatbot%20Technology%20Review.pdf) covers existing technologies and emerging trends in conversational interfaces, as well as social and ethical considerations for their use.
 
+<img src="/assets/images/chatbot.webp" style="max-width: 512px; margin: 0 auto; display:block;"/>
+
+
 We selected Google [Dialogflow](https://cloud.google.com/dialogflow/) for our chatbot prototype, following an analysis of privacy considerations under UK data protection law. A [Laravel](https://laravel.com/)-based server application was developed to connect to this API.
 
 By prototyping this application we hope to gain understandings of the implementation issues surrounding  financial chatbot systems in-the-wild. The application is currently in a developmental state and therefore remains closed-source. For access, please [contact us](/contact.html).

@@ -33,6 +33,11 @@ For more information, please read our [final project report](/assets/pdf/D6_Finc
 
 ## Using Verifiable Credentials to identify vulnerable customers in finance
 
+
+<img src="/assets/images/credential.webp" 
+     class="hide-on-mobile" 
+     style="max-width: 384px; margin: 0 auto; float:right; padding:0 0 10px 20px;"/>
+
 Digital identity systems are used worldwide, from "digital passports" to online log-in systems, but this project sought to investigate how "trustworthiness" might be designed-in to such systems. Trust is characterised here through several characteristics, including security, privacy, ethics, resilience, robustness and reliability, yet there remain significant challenges in designing systems which embody these concepts.
 
 Vulnerable customers within the financial sector are particularly important to consider within this framework, and such a trustworthy identity system should not further exclude people from participation in the financial industry. In the United Kingdom, the FCA (Financial Conduct Authority) has issued guidance in this respect, which [strongly encourages fair treatment of vulnerable customers](https://www.fca.org.uk/publications/finalised-guidance/guidance-firms-fair-treatment-vulnerable-customers), but financial institutions often lack a coherent strategy to the identification of client vulnerability. 
