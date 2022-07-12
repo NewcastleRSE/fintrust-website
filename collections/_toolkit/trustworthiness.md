@@ -55,7 +55,7 @@ Safety means the robust operation of systems in real-life situations, without lo
 
 ## AI Policy frameworks
 
-Governments and organisations are already implementing AI policy frameworks which cover these trustworthy technology properties: some cover all topics comprehensively, others focus on a subset. These often use different terminology: ethics, justice, fairness, accountability, transparency, which do not map to the technical literature directly. In our paper [2], we collect 32 such frameworks and outline how they cover the FEAS properties laid out above. While interest from regulators is strong, the question remains to what extent the implementation of FEAS technologies, which aim to enhance trustworthiness, actually also enhance service users' trust.
+Governments and organisations are already implementing AI policy frameworks which cover these trustworthy technology properties: some cover all topics comprehensively, others focus on a subset. These often use different terminology: ethics, justice, fairness, accountability, transparency, which do not map to the technical literature directly. In our paper [2], we collected 32 such frameworks and outline how they cover the FEAS properties laid out above. While interest from regulators is strong, the question remains to what extent the implementation of FEAS technologies, which aim to enhance trustworthiness, actually also enhance service users' trust.
 
 ## Future work: Fairness as a Service
 
