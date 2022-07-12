@@ -18,7 +18,7 @@ Things to consider:
  * Do you check and update the vulnerability status of your customers?
 
 We found that:
- * Over 53% of the UK population sit under the four FCA drivers of vulnerability.
+ * Over 53% of the UK population sit under the four FCA drivers of vulnerability: [health, life events, resilience and capabilities](https://www.fca.org.uk/publication/finalised-guidance/fg21-1.pdf\#7407\%20Finalised\%20Guidance\%20Vulnerability\_Feb\%2021.indd\%3A.8223\%3A1973).
  * Most technology is not built to adapt to vulnerabilities.
  * Other forms of digital identity can meet KYC (Know Your Customer) FCA regulations to drive financial inclusion, and can help meet ESG (Environmental Social Governance) and SDG (Sustainable Development Goals) UN directives.
  
